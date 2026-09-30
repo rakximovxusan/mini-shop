@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini-shop</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🛒 Mini Shop</h1>
+        <div class="shop"> <!-- Mahsulotlar -->
+            <div class="products">
+                <h2>Mahsulotlar</h2>
+                <button id="scanBtn">📷 Barcode skaner</button>
+                <div id="reader"></div>
+                <div id="productsList"></div>
+            </div> <!-- Savat -->
+            <div class="cart">
+                <h2>🛍️ Savat</h2>
+                <div id="cartList"></div>
+                <div class="total"> Jami: <span id="totalPrice">0</span> so'm </div> <button
+                    id="sellBtn">Sotish</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/html5-qrcode"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
